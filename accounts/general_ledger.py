@@ -20,7 +20,7 @@ def make_gl_entries(gl_map, cancel=False, adv_adj=False, merge_entries=True, upd
 			else:
 				frappe.throw(_("Incorrect number of General Ledger Entries found. You might have selected a wrong Account in the transaction."))
 		else:
-			delete_gl_entries(gl_map, adv_adj=adv_adj, update_outstanding=update_outstanding)
+			delete_gl_entries(gl_map, adv_adj=adv_adj, update_outstanding=update_outstanding)fd
 
 def process_gl_map(gl_map, merge_entries=True):
 	if merge_entries:
